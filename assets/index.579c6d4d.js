@@ -1,12 +1,10 @@
-export function estudio() {
- let start = `<div class="text-white">
+(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const r of t.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&o(r)}).observe(document,{childList:!0,subtree:!0});function a(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerpolicy&&(t.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?t.credentials="include":e.crossorigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function o(e){if(e.ep)return;e.ep=!0;const t=a(e);fetch(e.href,t)}})();function l(){/*! ANY */function i(n){"name"in n&&console.log(n.name)}i({name:"hol"})}function s(){document.addEventListener("DOMContentLoaded",()=>{var n;let i=document.querySelectorAll("li");(n=i[0].parentElement)==null||n.classList.add("list-decimal","list-inside"),i.forEach(a=>{a.classList.add("mb-3","hover:list-outside")})})}function u(){let i=`<div class="text-white">
 <br>
   <h1 class="text-2xl">Estudio Typescript</h1>
 <br/>
 <h2 class="text-xl">Types</h2>
 <br>
-<ul>`;
- let content1_5 = `
+<ul>`,n=`
 <li>Use el type string</li>
 <!--:string-->
 
@@ -32,9 +30,7 @@ export function estudio() {
 
 
 <li>Usa un parametro opcional en objeto parametro de una funcion</li>
-<!--:{a:string;b?:number}-->`;
-
- let content5_10 = `
+<!--:{a:string;b?:number}-->`,a=`
 <h2 class="text-xl p-2">Union Tipes</h2>
 <li>Usa un parametro que soporte dos types</li>
 <!--:string|number-->
@@ -116,9 +112,7 @@ let myArr = {name:'kevin',last:'lern'}; last in myArr -->
 interface Bedroom{bed:string};interface Bathroom extends Bedroom{lamp:boolean}; ----
 type Park = {trees:string};
 type Lake = Park & {ducks:true};
--->`;
-
- let content10_15 = `<li>Explain the main difference between Interface and Type</li>
+-->`,o=`<li>Explain the main difference between Interface and Type</li>
 <!--Interface value can be reassigned-->
 
 <li>What is Type Assertions and use an example of both ways to use Assertions and which is the best.</li>
@@ -133,9 +127,7 @@ type Lake = Park & {ducks:true};
 declare function myFunct(value:'GET'):void;
 let myVar = {value:'GET'};
 myFunct(myVar.value)
--->`;
-
- let content15_20 = `<li>Explica los 2 modos como poder resolver un Literal Inference</li>
+-->`,e=`<li>Explica los 2 modos como poder resolver un Literal Inference</li>
 <!--declare function myFunct(value:"GET"):void
 let myVar = {val:'GET' as 'GET'};
 myFunct(myVar.val as 'GET'); Just one as 'GET' is needed.-->
@@ -156,12 +148,4 @@ console.log(x!.toFixed())
 
 <li>Review Codeacademy Array exercise</li>
 
-`;
-
- let end = `</ul></div>`;
-
- let html =
-  start + content1_5 + content5_10 + content10_15 + content15_20 + end;
-
- return html;
-}
+`,t="</ul></div>";return i+n+a+o+e+t}l();s();let c=document.getElementById("app");c.innerHTML=u();
